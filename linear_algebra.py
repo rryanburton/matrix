@@ -29,10 +29,9 @@ def vector_sub(x, y):
     final = [(x[r] - y[r]) for r in range(len(x))]
     return final
 
-def vector_sum(*something):
-    sum = []
-    # sum = [[something[row][col][othr] for col in range(len(something[0]))] for row in range(len(something)for othr in range(len(something)]
-    print(list(zip(*something)))
+def vector_sum(*args):
+    final = [sum(x) for x in zip(*args)]
+    return final
 
 
 
