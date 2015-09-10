@@ -1,3 +1,5 @@
+import math
+
 class ShapeException(Exception):
     print("sorry those don't work together")
 
@@ -43,5 +45,6 @@ def vector_multiply():
 def vector_mean():
     pass
 
-def magnitude():
-    pass
+def magnitude(x):
+    final = math.sqrt(sum([x[i]**2 for i in range(len(x))]))
+    return final
