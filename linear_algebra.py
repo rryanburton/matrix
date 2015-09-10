@@ -22,10 +22,9 @@ def shape(vector):
 #     final = [(x + y) for item in zip(x, y) ]
 
 def vector_add(x, y):
-    # final = [(x[r] + y[r]) for r in range(len(x))]
-    # return final
-    final = [[x[r][s] + y[r][s]  for r in range(len(x[0]))] for s in range(len(x))]
+    final = [(x[r] + y[r]) for r in range(len(x))]
     return final
+
 def vector_sub(x, y):
     final = [(x[r] - y[r]) for r in range(len(x))]
     return final
